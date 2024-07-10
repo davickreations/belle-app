@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Playfair Display", "Lato", serif;
+}
+
+.item {
+    width: 286px;
+    height: 363px;
+    /* border: 1px solid #ddd; */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.image-box {
+    position: relative;
+    height: 60%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-label {
+    font-family: "Lato", serif;;
+    background-color: #E4B363;
+    color: #fff;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.heart {
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+
+.item-body {
+    padding: 15px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+
+.item-name {
+    font-family: "Playfair Display", serif;;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-family: "Lato", serif;;
+    font-size: 18px;
+    margin-bottom: 5px;
+    flex-grow: 1;
+}
+
+.item-body button {
+    font-family: "Lato", serif;;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 150px;
+    padding: 10px 24px;
+    border: 1px solid #E4B363;
+    text-align: center;
+    border-radius: 12px;
+    color: #333333;
+    background-color: #fff;
+    cursor: pointer;
+}

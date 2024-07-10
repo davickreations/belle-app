@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  font-family: "Lato", serif;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Lato", serif;
+}
+
+.footer {
+  background-color: #51287A;
+  margin-top: 40px;
+}
+
+.footer-content {
+  padding: 30px 13% 20px;
+}
+
+.footer-top {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-top h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+
+.footer-subscribe input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.footer-subscribe button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #F7C04B;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.footer-subscribe input::placeholder {
+  font-size: 14px;
+}
+
+.footer-subscribe input:focus {
+  border: none;
+}
+
+.footer-links {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 2rem;
+    color: #fff;
+}
+
+.footer-links h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.footer-links li,
+.footer-links p {
+  margin-bottom: 1rem;
+}
+
+
+.footer-links li a {
+  font-family: "Lato", serif;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all .40s ease;
+
+}
+
+.footer-links p {
+  font-family: "Lato", serif;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all .40s ease;
+
+}
+
+.footer-links .logo-name h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0; 
+  height: 100%;
+}
+
+@media screen and (min-width: 270px) and (max-width: 667px) {
+  .footer-top{
+    display: flex;
+  }
+
+  .belle {
+    display: none;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-links h3 {
+    font-size: 16px;
+  }
+
+  .footer-links li a,
+.footer-links p {
+  font-size: 14px;
+}
+}

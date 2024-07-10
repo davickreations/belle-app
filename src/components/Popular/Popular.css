@@ -1,0 +1,63 @@
+.pupolar-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #F5F5F5;
+    margin-bottom: 30px;
+}
+
+.pupolar-item {
+    display: grid;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+@media (min-width: 1024px) {
+    .pupolar-item {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pupolar-item {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-container {
+        width: 100%;
+        height: auto; 
+        padding: 10px;
+        overflow: hidden; 
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+    }
+
+    .swiper-pagination-bullet {
+        background: #fff;
+    }
+
+    .pupolar-item {
+        display: none; 
+    }
+}
