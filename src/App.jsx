@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/belle-app">
     <Header />
     <Routes>
       <Route path='/' element={<ProductListing />}/>
